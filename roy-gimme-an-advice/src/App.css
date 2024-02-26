@@ -1,0 +1,84 @@
+.App {
+  background-color: orange;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, 1fr)
+}
+
+header {
+  background-color: orange;
+  color: black;
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*min-width: 50px and max-width: 2560px 
+  minimum font-size: 12.5px and maximum font-size: 90px*/
+  font-size: clamp(0.78125rem, 0.6848rem + 3.0876vw, 5.625rem);
+  font-weight: bold;
+  border: 1px solid black
+}
+
+.TopHomeImg {
+  grid-column: 1 / span 2;
+  grid-row: 2 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black
+}
+
+.Sunrise {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid black
+}
+
+main {
+  background-color: lightgreen;
+  grid-column: 1 / span 2;
+  grid-row: 4 / 7;
+  border: 1px solid black
+}
+
+.BottomHomeImg {
+  grid-column: 1 / span 2;
+  grid-row: 7 / 10;
+  border: 1px solid black
+}
+
+footer {
+  grid-row: 10 / 11;
+  border: 1px solid black
+}
+
+/* Smaller smartphones - 0-480px */
+/* @media only screen and (min-width:3.125em) and (max-width:30em) { 
+	.App {
+        background-color: aqua;
+    }
+} */
+
+/* Tablets and larger smartphones - 481-768px */
+/* @media only screen and (min-width:30.0625em) and (max-width:48em) { 
+	.App {
+        background-color: aquamarine;
+    }
+} */
+
+/* Laptops, larger tablets in landscapes and small desktops - 769-1279px */
+/* @media only screen and (min-width:48.0625em) and (max-width:79.9375em) { 
+	.App {
+        background-color: pink;
+    }
+} */
+
+/* Larger desktops and monitors - 1280px */
+/* @media only screen and (min-width:80em) { 
+	.App {
+        background-color: orange;
+    }
+} */
