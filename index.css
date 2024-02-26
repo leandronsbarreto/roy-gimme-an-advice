@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box 
+}
+
+body {
+/*   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  /*min-width: 50px and max-width: 2560px 
+  minimum font size: 12px and maximum font size: 25px*/
+  font-size: clamp(0.75rem, 0.7338rem + 0.5179vw, 1.5625rem); 
+  /* height: 100vh; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block
+}
+
+nav {
+  min-height: 10vh;
+  width: 100vw;
+  background-color: lightblue;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+  width: 100vw;
+  background-color: lightcoral;
+}
+
+footer {
+  min-height: 15vh;
+  width: 100vw;
+  background-color: lightseagreen;
+}
+
+/* Smaller smartphones - 0-480px */
+@media only screen and (min-width:3.125em) and (max-width:30em) { 
+	body {
+        background-color: aqua;
+    }
+}
+
+/* Tablets and larger smartphones - 481-768px */
+@media only screen and (min-width:30.0625em) and (max-width:48em) { 
+	body {
+        background-color: aquamarine;
+    }
+}
+
+/* Laptops, larger tablets in landscapes and small desktops - 769-1279px */
+@media only screen and (min-width:48.0625em) and (max-width:79.9375em) { 
+	body {
+        background-color: pink;
+    }
+}
+
+/* Larger desktops and monitors - 1280px */
+@media only screen and (min-width:80em) { 
+	body {
+        background-color: orange;
+    }
+}
+
