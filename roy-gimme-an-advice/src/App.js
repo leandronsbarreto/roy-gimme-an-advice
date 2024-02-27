@@ -9,11 +9,16 @@ function App() {
       <figure className="TopHomeImg">
         <img className="Sunrise" src={sunrise} alt="Sunrise by Roy Lichtenstein (1965)" title="Sunrise by Roy Lichtenstein (1965)"/>
       </figure>
-      <main></main>
+      <main>
+        <div className="ContainerBubble">
+          <div className="Bubble">Leandro Nascimento da Silva Barreto</div>
+        </div>
+        <div className="ContainerButton"></div>
+      </main>
       <figure className="BottomHomeImg">
-        <img className="Sunrise" src={cryingGirl} alt="Sunrise by Roy Lichtenstein (1965)" title="Sunrise by Roy Lichtenstein (1965)"/>
+        <img className="CryingGirl" src={cryingGirl} alt="Crying Girl by Roy Lichtenstein (1965)" title="Crying Girl by Roy Lichtenstein (1965)"/>
       </figure>
-      {/* <footer></footer> */}
+      <footer></footer>
     </div>
   );
 }
